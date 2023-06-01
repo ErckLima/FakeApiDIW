@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-evenly;
+}
+.pesquisa{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.btn input{
+    background-color: white;
+    
+}
+.pesquisainput{
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+.Img-card{
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 250px;
+}
+.card{
+    text-align: center;
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 400px;
+    max-height: 400px;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cabecalho img{
+    max-width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+.cabecalho h1{
+    font-family: 'Inter', sans-serif;
+}
+
+.Id-card{
+    display: flex;
+    text-align: end;
+}
+.cabecalho button{
+    background-color: white;
+    border-style: none;
+    cursor: pointer;
+    
+}
+.cabeca h4{
+    margin-top: -5px;
+}
+.expanded{
+    min-width: 600px;
+    min-height: 700px;
+}
+.meusdados{
+    background-color: rgb(233, 233, 233);
+    margin-top: -20px;
+    min-width: 99%;
+    padding: 10px;
+    margin-left: -5px;
+}
+.Setas img{
+    max-width: 20px;
+    margin-left: 1px;
+    text-align: center;
+}
+.Setas img:hover{
+    cursor: pointer;
+}
