@@ -5,7 +5,7 @@ function BuscarprodsInicial(parametro) {
   const numerodapag = document.getElementById("Numpag");
   numerodapag.innerHTML = page
 
-  fetch(`http://diwserver.vps.webdock.cloud:8765/products?${parametro}`)
+  fetch(`https://diwserver.vps.webdock.cloud/products?${parametro}`)
     .then(response => response.json())
     .then(data => {
       //reecbe o data e paga apenas o elemento produtos da api
@@ -46,7 +46,7 @@ function BuscarprodsInicial2(parametro) {
   const numerodapag = document.getElementById("Numpag");
   numerodapag.innerHTML = page
 
-  fetch(`http://diwserver.vps.webdock.cloud:8765/products?${parametro}`)
+  fetch(`https://diwserver.vps.webdock.cloud/products?${parametro}`)
     .then(response => response.json())
     .then(data => {
       //reecbe o data e paga apenas o elemento produtos da api
@@ -87,7 +87,7 @@ function BuscarprodsInicial3(parametro) {
   const numerodapag = document.getElementById("Numpag");
   numerodapag.innerHTML = page
 
-  fetch(`http://diwserver.vps.webdock.cloud:8765/products/${parametro}`)
+  fetch(`https://diwserver.vps.webdock.cloud/products/${parametro}`)
     .then(response => response.json())
     .then(data => {
       const produtos_do_for = {
@@ -193,7 +193,7 @@ function BuscarCategory(){
   const limparTela = document.getElementById("prods");
   limparTela.innerHTML = '';
 
-  fetch(`http://diwserver.vps.webdock.cloud:8765/products/category/${category}`)
+  fetch(`https://diwserver.vps.webdock.cloud/products/category/${category}`)
     .then(response => response.json())
     .then(data => {
       const produtos_Category = data.products
