@@ -19,7 +19,7 @@
         const productId = urlParams.get('id');
 
         // Busca os detalhes do produto com base no ID
-        fetch(`http://diwserver.vps.webdock.cloud:8765/products/${productId}`)
+        fetch(`https://diwserver.vps.webdock.cloud/products/${productId}`)
             .then(response => response.json())
             .then(data => {
                 const detalhesProduto = `
