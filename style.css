@@ -24,9 +24,9 @@ body{
 
 }
 .Img-card{
-    max-width: 200px;
-    min-width: 200px;
-    max-height: 250px;
+    max-width: 150px;
+    min-width: 150px;
+    max-height: 200px;
 }
 .card{
     text-align: center;
@@ -37,7 +37,7 @@ body{
     margin: auto;
     border: 1px solid black;
     margin-top: 10px;
-    padding: 50px;
+    padding: 5px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px;
     display: flex;
@@ -91,3 +91,31 @@ body{
 .Setas img:hover{
     cursor: pointer;
 }
+.card h1{
+    font-size: 15px;
+    
+}
+
+
+@media (max-width: 760px) {
+    
+    .cabecalho h1{
+        font-size: 20px;
+
+    }
+    .pesquisa input{
+        max-width: 80px;
+    }
+    .pesquisa select{
+        max-width: 80px;
+    }
+    .Setas label{
+        display: none;
+    }
+    .Setas{
+        display: flex;
+        padding: 10px;
+    }
+
+}
+  

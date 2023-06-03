@@ -138,11 +138,18 @@ function AdcionarAoDom(Produtos){
     imagem.src = element.image;
     imagem.classList.add('Img-card')
 
+    const uso = document.createElement("usage")
+    uso.innerHTML = `<strong>${element.usage}</strong>`
 
-    CardProduto.appendChild(id)
-    CardProduto.appendChild(titulo)
-    CardProduto.appendChild(imagem)
-    CardProduto.appendChild(preço)
+    const marca = document.createElement("p");
+    marca.innerHTML = `Marca: <strong>${element.brandName}</strong>` 
+
+
+    CardProduto.appendChild(imagem);
+    CardProduto.appendChild(titulo);
+    CardProduto.appendChild(uso);
+    CardProduto.appendChild(marca);
+    CardProduto.appendChild(preço);
 
     // Adiciona o evento de clique ao card
     CardProduto.addEventListener('click', () => {
@@ -188,6 +195,7 @@ function pesquisaid(){
   BuscarprodsInicial3(numero_do_id)
 }
 
+
 function BuscarCategory(){
   const category = document.getElementById("Seleção").value
   const limparTela = document.getElementById("prods");
@@ -217,10 +225,17 @@ function BuscarCategory(){
         idElement.textContent = `ID: ${VariavelDoForEach.id}`;
         idElement.classList.add('Id-card');
 
+        const uso = document.createElement("usage")
+        uso.innerHTML = `<strong>${VariavelDoForEach.usage}</strong>`
+
+        const marca = document.createElement("p");
+        marca.innerHTML = `Marca: <strong>${VariavelDoForEach.brandName}</strong>` 
+
         // Adiciona os elementos ao card
-        cardElement.appendChild(idElement);
         cardElement.appendChild(imageElement);
         cardElement.appendChild(titleElement);
+        cardElement.appendChild(uso);
+        cardElement.appendChild(marca);
         cardElement.appendChild(priceElement);
 
         // Adiciona o evento de clique ao card
